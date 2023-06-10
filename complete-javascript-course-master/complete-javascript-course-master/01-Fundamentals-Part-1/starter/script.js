@@ -36,7 +36,14 @@ console.log(ageJonas > ageSarah);
 console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
-*/
+
 console.log(now - 1991 > now - 2018)
+*/
 
+const firstName = 'Caio';
+const job = 'teacher';
+const birthYear = 1993;
+const year = 2037;
 
+const caio = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(caio);
