@@ -109,8 +109,9 @@ if (day === 'Monday') {
     console.log(`Not a valid day!`);
 }
 */
-
+/*
 //Challenge#4
+
 const bill = 275;
 let tip;
 
@@ -121,3 +122,5 @@ console.log(tip);
 const msgTip = `The bill was $${bill}, the tip was $${tip}, and the total value $${bill + tip}.`
 
 console.log(msgTip);
+*/
+
