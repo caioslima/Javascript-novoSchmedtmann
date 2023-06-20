@@ -168,7 +168,7 @@ function verifcadorPerfeito(numero) {
 
 function numInteiro(dado) {
     const resultado = verifcadorPerfeito(dado);
-    const mult = 
+    const mult =
     if (resultado === !'False') {
         const resulFinal = dado === (mult * mult) ? 'True' : 'False';
     }
@@ -177,4 +177,97 @@ function numInteiro(dado) {
 faliure
 
 */
+/*
+const pointsDolphins1 = 44;
+const pointsDolphins2 = 23;
+const pointsDolphins3 = 71;
 
+const pointsKoalas1 = 65;
+const pointsKoalas2 = 54;
+const pointsKoalas3 = 49;
+
+const pointsDolphins11 = 85;
+const pointsDolphins12 = 54;
+const pointsDolphins13 = 41;
+
+const pointsKoalas11 = 23;
+const pointsKoalas12 = 34;
+const pointsKoalas13 = 27;
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+const scoreDolphins = calcAverage(pointsDolphins1, pointsDolphins2, pointsDolphins3);
+
+const scoreKoalas = calcAverage(pointsKoalas1, pointsKoalas2, pointsKoalas3);
+
+const scoreDolphins1 = calcAverage(pointsDolphins11, pointsDolphins12, pointsDolphins13);
+
+const scoreKoalas1 = calcAverage(pointsKoalas11, pointsKoalas12, pointsKoalas13);
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins > avgKoalas * 2) {
+        const res = `Dolphins wins (${avgDolphins} vs. ${avgKoalas})`;
+        return res;
+    } else if (avgKoalas > avgDolphins * 2) {
+        const res = `Koalas wins (${avgKoalas} vs. ${avgDolphins})`;
+        return res;
+    } else {
+        const res = `No team wins... `;
+        return res;
+    }
+}
+
+const data1 = checkWinner(scoreDolphins, scoreKoalas);
+const data2 = checkWinner(scoreDolphins1, scoreKoalas1);
+
+console.log(scoreDolphins, scoreKoalas);
+console.log(data1);
+
+console.log(scoreDolphins1, scoreKoalas1);
+console.log(data2);
+*/
+/*
+const oldFriends = ['Alan', 'Alexandre', 'Bruno', 'Jhonatan'];
+console.log(oldFriends);
+console.log(oldFriends[oldFriends.length - 1]);
+
+const firstName = 'Caio';
+const lastName = 'Silva Lima';
+const idade = 2023 - 1993;
+
+const dadosPessoais = new Array(firstName, lastName, idade, 'Quem sabe 🤪', oldFriends);
+console.log(dadosPessoais);
+
+dadosPessoais[3] = 'Programação';
+console.log(dadosPessoais);
+*/
+
+//Challenge#2 Fundam. part2
+/*
+function calcPorcTip(bill) {
+    const tip = calcTip(bill);
+    return bill + (bill * tip);
+}
+
+function calcTip(tipPorc) {
+    return tipPorc >= 50 && tipPorc <= 300 ? .15 : .2;
+}
+
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]) * bills[0], calcTip(bills[1]) * bills[1], calcTip(bills[2]) * bills[2]];
+console.log(tips);
+*/
+
+function calcTip(bill) {
+    return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+}
+
+const bills = new Array(125, 555, 44);
+
+const tips = new Array(calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]));
+console.log(tips);
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
