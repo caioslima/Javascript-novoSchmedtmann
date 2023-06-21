@@ -258,7 +258,7 @@ const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]) * bills[0], calcTip(bills[1]) * bills[1], calcTip(bills[2]) * bills[2]];
 console.log(tips);
 */
-
+/*
 function calcTip(bill) {
     return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
 }
@@ -271,3 +271,107 @@ console.log(tips);
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
+*/
+/*
+//little Challange
+const names = 'Caio';
+const friends = ['Michael', 'Peter', 'Steven']
+console.log(friends);
+
+console.log(`${names} has ${friends.length} friends, and his best friend is called ${friends[0]}.`)
+*/
+/*
+const caio = {
+    firstName: 'Caio',
+    lastName: 'S. Lima',
+    birthYear: 1993,
+    job: 'Teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    getSummary: function () {
+        if (this.hasDriversLicense) {
+            this.age = 2037 - this.birthYear;
+            this.can = `a`;
+        } else {
+            this.age = 2037 - this.birthYear;
+            this.can = `no`;
+        }
+        return `${this.firstName} is a ${this.age}-years old ${this['job']}, and he has ${this.can} driver's license.`
+    }
+}
+
+caio.getSummary();
+
+console.log(caio['getSummary']());
+*/
+/*
+//Challange#3 fundam 2
+const marks = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+const johns = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+const higherBMI = marks.calcBMI() > johns.calcBMI() ? `${marks.fullName}'s BMI (${marks.BMI}) is higher than ${johns.fullName}'s (${johns.BMI})!` : `${johns.fullName}'s BMI (${johns['BMI']}) is higher than ${marks.fullName}'s (${marks.BMI})!`
+console.log(higherBMI);
+//${marks['calcBMI']()}
+console.log(marks.BMI, johns.BMI);
+*/
+
+const caioArray = [
+    'Caio',
+    'S. Lima',
+    2037 - 1993,
+    'Aluno',
+    ['Michael', 'Peter', 'Steven'],
+    true,
+];
+
+const types = [];
+
+for (let i = 0; i < caioArray.length; i++) {
+    console.log(caioArray[i], typeof caioArray[i]);
+
+    types[i] = typeof caioArray[i];
+}
+
+console.log(types);
+
+const years = [1993, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+//continue and break
+console.log('_____continue_______');
+for (let i = 0; i < years.length; i++) {
+    if (typeof caioArray[i] !== 'string') continue;
+
+    console.log(caioArray[i], typeof caioArray[i]);
+}
+
+console.log('_____break with number_______');
+
+for (let i = 0; i < years.length; i++) {
+    if (typeof caioArray[i] === 'number') break;
+
+    console.log(caioArray[i], typeof caioArray[i]);
+}
