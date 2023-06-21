@@ -331,7 +331,7 @@ console.log(higherBMI);
 //${marks['calcBMI']()}
 console.log(marks.BMI, johns.BMI);
 */
-
+/*
 const caioArray = [
     'Caio',
     'S. Lima',
@@ -374,4 +374,55 @@ for (let i = 0; i < years.length; i++) {
     if (typeof caioArray[i] === 'number') break;
 
     console.log(caioArray[i], typeof caioArray[i]);
+}
+*/
+//Fazer o loop de tras para frente
+/*
+const caioArray = [
+    'Caio',
+    'S. Lima',
+    2037 - 1993,
+    'Aluno',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+for (let i = caioArray.length - 1; i >= 0; i--) {
+    console.log(i, caioArray[i]);
+}
+
+//Loop dentro de outro loop
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`------- starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise} Lifting weight repetition ${rep}.`);
+    }
+}
+*/
+
+//while loop
+/*
+console.log(`------For() Loop-------`)
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`Lifting weights repetition ${i}.`);
+}
+
+console.log(`------While() Loop-------`)
+
+let rep = 1;
+
+while (rep <= 10) {
+    console.log(`Lifting weights repetition ${rep}.`);
+    rep++;
+}
+*/
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`)
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...')
 }
