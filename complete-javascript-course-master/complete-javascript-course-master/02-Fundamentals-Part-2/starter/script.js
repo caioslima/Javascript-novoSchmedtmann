@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 function logger() {
@@ -428,7 +428,7 @@ while (dice !== 6) {
     if (dice === 6) console.log('Loop is about to end...')
 }
 */
-
+/*
 //Challenge#4
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
@@ -457,3 +457,12 @@ const calcAverage = function (arr) {
 console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
+*/
+const cllasfdfs = 2325;
+const cakljdfsdfgasdg = 23546757;
+const cameloVoadoredf = "23";
+
+console.log(cllasfdfs);
+console.log(cakljdfsdfgasdg);
+console.log(cameloVoadoredf);
+console.log("Caramelo");
