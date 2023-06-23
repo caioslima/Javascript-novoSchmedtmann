@@ -435,34 +435,24 @@ const tips = [];
 const totals = [];
 
 const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
 
 for (let i = 0; i < bills.length; i++) {
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(bills[i] + tips[i]);
-    console.log(bills[i], '+', tips[i], '=', totals[i]);
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(bills[i] + tips[i]);
+  console.log(bills[i], "+", tips[i], "=", totals[i]);
 }
 
 const calcAverage = function (arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i]
-    }
-    return sum / arr.length;
-}
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
 
-console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 */
-const cllasfdfs = 2325;
-const cakljdfsdfgasdg = 23546757;
-const cameloVoadoredf = "23";
-
-console.log(cllasfdfs);
-console.log(cakljdfsdfgasdg);
-console.log(cameloVoadoredf);
-console.log("Caramelo");
