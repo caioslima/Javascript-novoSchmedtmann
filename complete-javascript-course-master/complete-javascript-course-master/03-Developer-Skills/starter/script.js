@@ -59,3 +59,6 @@ const calcTempAmplitudeNew = function (tp1, tp2) {
 };
 
 console.log(calcTempAmplitudeNew([1, 2, 3], [4, 5, 6]));
+
+console.warn('casa 01');
+console.error('casa 02');
