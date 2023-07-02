@@ -39,9 +39,13 @@ btnRoll.addEventListener('click', function () {
     if (player0.classList.contains('player--active')) {
       player0.classList.remove('player--active');
       player1.classList.add('player--active');
+      current0El.textContent = 0;
+      currentScore = 0;
     } else if (player1.classList.contains('player--active')) {
       player1.classList.remove('player--active');
       player0.classList.add('player--active');
+      current1El.textContent = 0;
+      currentScore = 0;
     }
   }
 });
