@@ -32,14 +32,6 @@ btnRoll.addEventListener('click', function () {
     currentScore += dice;
     document.getElementById(`current--${activePlayer}`).textContent =
       currentScore;
-
-    // if (player0El.classList.contains('player--active')) {
-    //   currentScore += dice;
-    //   current0El.textContent = currentScore;
-    // } else if (player1El.classList.contains('player--active')) {
-    //   currentScore += dice;
-    //   current1El.textContent = currentScore;
-    // }
   } else {
     // Switch to next player
     document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -47,17 +39,5 @@ btnRoll.addEventListener('click', function () {
     activePlayer = activePlayer === 0 ? 1 : 0;
     player0El.classList.toggle('player--active');
     player1El.classList.toggle('player--active');
-
-    // if (player0El.classList.contains('player--active')) {
-    //   player0El.classList.remove('player--active');
-    //   player1El.classList.add('player--active');
-    //   current0El.textContent = 0;
-    //   currentScore = 0;
-    // } else if (player1El.classList.contains('player--active')) {
-    //   player1El.classList.remove('player--active');
-    //   player0El.classList.add('player--active');
-    //   current1El.textContent = 0;
-    //   currentScore = 0;
-    // }
   }
 });
