@@ -41,6 +41,3 @@ btnRoll.addEventListener('click', function () {
     player1El.classList.toggle('player--active');
   }
 });
-
-const casa = 1993;
-const casas = 1893;
