@@ -42,4 +42,8 @@ btnRoll.addEventListener('click', function () {
   }
 });
 
-btnHold.addEventListener('click', function () {});
+btnHold.addEventListener('click', function () {
+  
+
+  document.getElementById(`score--${.activePlayer}`).textContent = 0;
+});
