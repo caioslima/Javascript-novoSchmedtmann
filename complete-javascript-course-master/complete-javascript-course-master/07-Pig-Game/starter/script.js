@@ -97,3 +97,6 @@ btnNew.addEventListener('click', function () {
     player1El.classList.remove('player--winner');
   }
 });
+
+const casa = 1993;
+casa = 2023;
