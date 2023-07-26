@@ -79,21 +79,26 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', function () {
-  // scores[0] = scores[0] - scores[0];
-  scores.shift();
-  scores.shift();
-  scores.push(0);
-  scores.push(0);
-  // scores[1] = scores[1] - scores[1];
-  // .document.getElementById(`current--0`).textContent = scores[0];
-  // document.getElementById(`current--1`).textContent = scores[1];
-  console.log(scores);
-  currentScoreEl.textContent = 0;
-  playing = true;
-  diceEl.classList.add('hidden');
-  if (player0El.classList.contains('player--winner')) {
-    player0El.classList.remove('player--winner');
-  } else {
-    player1El.classList.remove('player--winner');
-  }
-});
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+}
+
+// btnNew.addEventListener('click', function () {
+//   // scores[0] = scores[0] - scores[0];
+//   scores.shift();
+//   scores.shift();
+//   scores.push(0);
+//   scores.push(0);
+//   // scores[1] = scores[1] - scores[1];
+//   // .document.getElementById(`current--0`).textContent = scores[0];
+//   // document.getElementById(`current--1`).textContent = scores[1];
+//   console.log(scores);
+//   currentScoreEl.textContent = 0;
+//   playing = true;
+//   diceEl.classList.add('hidden');
+//   if (player0El.classList.contains('player--winner')) {
+//     player0El.classList.remove('player--winner');
+//   } else {
+//     player1El.classList.remove('player--winner');
+//   }
+// });
