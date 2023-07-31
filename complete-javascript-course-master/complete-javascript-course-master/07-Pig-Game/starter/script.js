@@ -81,7 +81,9 @@ btnHold.addEventListener('click', function () {
 btnNew.addEventListener('click', function () {
   score0El.textContent = 0;
   score1El.textContent = 0;
-}
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+});
 
 // btnNew.addEventListener('click', function () {
 //   // scores[0] = scores[0] - scores[0];
